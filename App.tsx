@@ -39,10 +39,13 @@ interface ScanInterface extends NativeModule {
   ) => void;
 }
 
-enum BarcodeScannerType {
-  SINGLE = 'SINGLE',
-  MULTI = 'MULTI',
-}
+const BarcodeScannerType = {
+  SINGLE: 'SINGLE',
+  MULTI: 'MULTI',
+} as const;
+
+type BarcodeScannerType =
+  (typeof BarcodeScannerType)[keyof typeof BarcodeScannerType];
 
 const ScanInterface: ScanInterface = NativeModules.ScanInterface;
 
