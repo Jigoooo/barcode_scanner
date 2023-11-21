@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BarcodeScanner</string>
+    <string name="init_barcode">초기화</string>
+    <string name="save_barcode">저장</string>
+    <string name="flash_button">플래시</string>
+    <string name="camera_switch">카메라 전환</string>
+    <string name="rotate_button">회전</string>
+    <string name="scan_list">스캔한 바코드</string>
+    <string name="scan_count">총 스캔 수: %1$d</string>
+</resources>
